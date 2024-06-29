@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  text-align: right;
+  color: white;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+
+.top-right {
+  position: absolute;
+  top: 250px;
+  right: 200px;
+}
+
+.banner-title {
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 45px;
+}
+
+.banner-description {
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  border: 0;
+  padding: 18px 35px;
+  height: 64px;
+  border-radius: 5px;
+  background: #8606f0;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.section-description {
+  color: #757575;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.about-info-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about .info-title {
+  font-size: 20px;
+  color: #757575;
+}
+
+.info-description {
+  font-weight: 700;
+  font-size: 20px;
+  color: #474747;
+}
+
+/* What I do styles */
+.plans-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+.plans{
+  background: #FFFFFF;
+  box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  padding: 30px;
+  width: 300px;
+}
+.plans-title{
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.plans-description{
+  color: #1f1e1e;
+}
+
+/* Footer-container */
+.footer-container {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 140px;
+  left: 20px;
+}
+
+/* Contact styles */
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  background: #0c0c0c;
+  padding: 50px 20px;
+  justify-content: center;
+}
+.contact .section-title{
+  text-align: left;
+}
+
+.contact input[type="text"], input[type="email"], textarea{
+  background-color: #0c0c0c;
+  margin-bottom: 24px;
+  border: 1px solid #FFFFFF;
+  width: 80%;
+  padding: 18px 30px;
+  border-radius: 7px;
+}
+
+input{
+  height: 64px;
+}
+
+.contact a{
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .top-right {
+    top: 150px;
+    right: 100px;
+  }
+
+  .top-left {
+    top: 100px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-right {
+    position: static;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .top-left {
+    position: static;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .plans-container {
+    gap: 20px;
+  }
+
+  .contact {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-title {
+    font-size: 30px;
+  }
+
+  .banner-description, .section-description {
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    font-size: 18px
+  }
+}
