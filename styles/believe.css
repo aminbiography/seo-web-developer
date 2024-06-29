@@ -29,7 +29,6 @@
 
 .banner-description {
   color: #87CEEB;
-  font-size: 18px;
   margin-bottom: 30px;
 }
 
@@ -95,6 +94,10 @@
 }
 .plans-description{
   color: #1f1e1e;
+}
+
+.bttn-title {
+  color: #87CEEB;
 }
 
 /* Footer-container */
